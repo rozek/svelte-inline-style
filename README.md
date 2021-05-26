@@ -1,6 +1,6 @@
 # svelte-inline-style #
 
-Sometimes it is necessary to add inline styles to a svelte component rather than to rely on a stylesheet and just switch classes.
+Sometimes it is necessary to add inline styles to a Svelte component rather than to rely on a stylesheet and just switch classes.
 
 A straightforward approach could be to use `style` attributes:
 
@@ -10,14 +10,14 @@ A straightforward approach could be to use `style` attributes:
 
 but this one would first require to construct a string which would then have to parsed by the browser before the actual changes could be made.
 
-Another solution has been shown by [mouse484](https://github.com/mouse484) in package [svelte-inline-css](https://github.com/mouse484/svelte-inline-css): with the aid of svelte "actions" inline styles may be directly set on the HTML elements created to represent svelte components:
+Another solution has been shown by [mouse484](https://github.com/mouse484) in package [svelte-inline-css](https://github.com/mouse484/svelte-inline-css): with the aid of Svelte "actions" inline styles may be directly set on the HTML elements created to represent Svelte components:
 
 ```
 <script lang="ts">
   import style from 'svelte-inline-css'
 
   export let styles = {
-    'font-size':'14px',
+    'font-size':'22px',
     'font-weight':'bold'
   }
 </script>
@@ -31,13 +31,15 @@ This implementation therefore suggests a third alternative, which seems "more na
 
 ```
 <script lang="ts">
-  import style from './svelte-inline-style.ts'
+  import style from './svelte-inline-style.js'
 
   export let styles = {
-    fontSize:'14px',
+    fontSize:'22px',
     fontWeight:'bold'
   }
 </script>
 
 <div use:style={styles}>...</div>
 ```
+
+If you like, you may experiment with `svelte-inline-style` using the [Svelte REPL](https://svelte.dev/repl/38dd68dc0838491bac4472b6229246b7)
