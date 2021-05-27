@@ -1,0 +1,25 @@
+{
+  "name": "svelte-inline-style",
+  "version": "0.1.0",
+  "description": "inline styles for svelte components",
+  "main": "svelte-inline-style.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rozek/svelte-inline-style.git"
+  },
+  "keywords": [
+    "svelte",
+    "svelte3",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Andreas Rozek <a.rozek@gmx.de> (https://www.rozek.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rozek/svelte-inline-style/issues"
+  },
+  "homepage": "https://github.com/rozek/svelte-inline-style#readme"
+}
