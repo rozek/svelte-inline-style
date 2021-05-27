@@ -1,5 +1,34 @@
 # svelte-inline-style #
 
+Efficiently apply inline styles to Svelte components.
+
+### Installation ###
+
+```
+  npm install svelte-inline-style
+```
+
+### Usage ###
+
+```
+<script lang="ts">
+  import style from './svelte-inline-style.js'
+
+  export let styles = {
+    fontSize:'22px',   // use camel-cased CSS property names...
+    fontWeight:'bold'  // ...and start with a small letter
+  }
+</script>
+
+<div use:style={styles}>...</div>
+```
+
+### Try yourself ###
+
+Experiment with `svelte-inline-style` using the [Svelte REPL](https://svelte.dev/repl/38dd68dc0838491bac4472b6229246b7)
+
+### Background Information ###
+
 Sometimes it is necessary to add inline styles to a Svelte component rather than to rely on a stylesheet and just switch classes.
 
 A straightforward approach could be to use `style` attributes:
@@ -42,4 +71,3 @@ This implementation therefore suggests a third alternative, which seems "more na
 <div use:style={styles}>...</div>
 ```
 
-If you like, you may experiment with `svelte-inline-style` using the [Svelte REPL](https://svelte.dev/repl/38dd68dc0838491bac4472b6229246b7)
