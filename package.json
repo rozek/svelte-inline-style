@@ -1,6 +1,6 @@
 {
   "name": "svelte-inline-style",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "inline styles for svelte components",
   "main": "svelte-inline-style.js",
   "scripts": {
