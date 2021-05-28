@@ -5,7 +5,7 @@ Efficiently apply inline styles to Svelte components.
 ### Installation ###
 
 ```
-  npm install svelte-inline-style
+npm install svelte-inline-style
 ```
 
 ### Usage ###
