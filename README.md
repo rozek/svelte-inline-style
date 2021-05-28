@@ -11,7 +11,7 @@ npm install svelte-inline-style
 ### Usage ###
 
 ```
-<script lang="ts">
+<script>
   import style from 'svelte-inline-style'
 
   export let styles = {
@@ -42,7 +42,7 @@ but this one would first require to construct a string which would then have to 
 Another solution has been shown by [mouse484](https://github.com/mouse484) in package [svelte-inline-css](https://github.com/mouse484/svelte-inline-css): with the aid of Svelte "actions" inline styles may be directly set on the HTML elements created to represent Svelte components:
 
 ```
-<script lang="ts">
+<script>
   import style from 'svelte-inline-css'
 
   export let styles = {
@@ -59,7 +59,7 @@ This solution works great, but - again - requires some string processing before 
 This implementation therefore suggests a third alternative, which seems "more natural": start with camel-cased CSS property names right away and apply them to HTML elements without prior conversion.
 
 ```
-<script lang="ts">
+<script>
   import style from './svelte-inline-style.js'
 
   export let styles = {
