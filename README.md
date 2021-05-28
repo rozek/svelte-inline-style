@@ -12,7 +12,7 @@ npm install svelte-inline-style
 
 ```
 <script lang="ts">
-  import style from './svelte-inline-style.js'
+  import style from 'svelte-inline-style'
 
   export let styles = {
     fontSize:'22px',   // use camel-cased CSS property names...
