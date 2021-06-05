@@ -6,6 +6,7 @@
     function update (newStyleSet:StyleSet) {
       for (let CamelCasedName in newStyleSet) {
         if (newStyleSet.hasOwnProperty(CamelCasedName)) {
+// @ts-ignore
           Element.style[CamelCasedName] = newStyleSet[CamelCasedName]
         }
       }
