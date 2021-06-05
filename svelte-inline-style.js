@@ -1,16 +1,2 @@
-/**** use:style={styleset} - with camel-cased style properties ****/
-
-  function style (Element, initialStyleSet) {
-    function update (newStyleSet) {
-      for (let CamelCasedName in newStyleSet) {
-        if (newStyleSet.hasOwnProperty(CamelCasedName)) {
-          Element.style[CamelCasedName] = newStyleSet[CamelCasedName]
-        }
-      }
-    }
-
-    update(initialStyleSet) // update for the 1st time after element was created
-
-    return { update }                  // update again whenever styleset changes
-  }
-export default style
+!function(n,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(n="undefined"!=typeof globalThis?globalThis:n||self,function(){var t=n.inlineStyle,i=n.inlineStyle=e();i.noConflict=function(){return n.inlineStyle=t,i}}())}(this,(function(){"use strict";return function(n,e){function t(e){for(var t in e)e.hasOwnProperty(t)&&(n.style[t]=e[t])}return t(e),{update:t}}}));
+//# sourceMappingURL=svelte-inline-style.js.map
