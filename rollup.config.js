@@ -6,12 +6,13 @@ import { terser } from 'rollup-plugin-terser'
 export default {
   input: './svelte-inline-style.ts',
   output: {
-    dir: './',
-    format: 'umd', // builds for both Node.js and Browser
-    name:'inlineStyle', // required for UMD modules
-    noConflict:true,
-    sourcemap: true,
-    exports: 'default',
+    file:     './svelte-inline-style.esm.js',
+    format:   'esm',
+    sourcemap:true
   },
-  plugins: [typescript(), terser()],
+  plugins: [
+    typescript(),
+    terser({ format:{ comments:false } })
+  ],
+
 };
