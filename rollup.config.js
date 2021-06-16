@@ -4,9 +4,9 @@ import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser'
 
 export default {
-  input: './svelte-inline-style.ts',
+  input: './src/svelte-inline-style.ts',
   output: {
-    file:     './svelte-inline-style.esm.js',
+    file:     './dist/svelte-inline-style.esm.js',
     format:   'esm',
     sourcemap:true
   },

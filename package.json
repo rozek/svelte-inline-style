@@ -3,9 +3,9 @@
   "version": "0.1.5",
   "description": "inline styles for svelte components",
   "type": "module",
-  "module": "./svelte-inline-style.esm.js",
+  "module": "./dist/svelte-inline-style.esm.js",
   "exports": {
-    "import": "./svelte-inline-style.esm.js"
+    "import": "./dist/svelte-inline-style.esm.js"
   },
   "scripts": {
     "build": "rimraf dist && tsc && rollup -c rollup.config.js",
