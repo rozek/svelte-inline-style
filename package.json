@@ -1,6 +1,6 @@
 {
   "name": "svelte-inline-style",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "inline styles for svelte components",
   "type": "module",
   "module": "./dist/svelte-inline-style.esm.js",
