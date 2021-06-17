@@ -16,10 +16,9 @@
     "url": "git+https://github.com/rozek/svelte-inline-style.git"
   },
   "keywords": [
-    "svelte",
     "svelte3",
-    "javascript",
-    "typescript"
+    "svelte-action",
+    "inline-styles"
   ],
   "author": "Andreas Rozek <a.rozek@gmx.de> (https://www.rozek.de)",
   "license": "MIT",
