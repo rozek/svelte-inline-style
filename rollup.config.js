@@ -10,9 +10,5 @@ export default {
     format:   'esm',
     sourcemap:true
   },
-  plugins: [
-    typescript(),
-    terser({ format:{ comments:false } })
-  ],
-
+  plugins: [typescript(), terser({ format:{ comments:false, safari10:true } })],
 };
