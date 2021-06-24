@@ -4,13 +4,13 @@ Efficiently apply inline styles to Svelte components.
 
 **NPM users**: please consider the [Github README](https://github.com/rozek/svelte-inline-style/blob/main/README.md) for the latest description of this package (as updating the docs would otherwise always require a new NPM package version)
 
-### Installation ###
+## Installation ##
 
 ```
 npm install svelte-inline-style
 ```
 
-### Usage ###
+## Usage ##
 
 ```
 <script>
@@ -25,11 +25,11 @@ npm install svelte-inline-style
 <div use:style={styles}>...</div>
 ```
 
-### Try yourself ###
+## Try yourself ##
 
 Experiment with `svelte-inline-style` using the [Svelte REPL](https://svelte.dev/repl/38dd68dc0838491bac4472b6229246b7)
 
-### Background Information ###
+## Background Information ##
 
 Sometimes it is necessary to add inline styles to a Svelte component rather than to rely on a stylesheet and just switch classes.
 
@@ -73,7 +73,7 @@ This implementation therefore suggests a third alternative, which seems "more na
 <div use:style={styles}>...</div>
 ```
 
-### Build Instructions ###
+## Build Instructions ##
 
 You may easily build this package yourself.
 
@@ -83,3 +83,7 @@ Just install [NPM](https://docs.npmjs.com/) according to the instructions for yo
 2. open a shell and navigate to the root directory of this repository
 3. run `npm install` in order to install the complete build environment
 4. execute `npm run build` to create a new build
+
+## License ##
+
+[MIT License](LICENSE.md)
