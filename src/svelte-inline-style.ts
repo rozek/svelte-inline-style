@@ -1,3 +1,7 @@
+//----------------------------------------------------------------------------//
+//                            Svelte Inline-Style                             //
+//----------------------------------------------------------------------------//
+
 /**** use:style={styleset} - with camel-cased style properties ****/
 
   type StyleSet = { [Name:string]:string|number }
