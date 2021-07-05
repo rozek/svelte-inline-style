@@ -20,4 +20,4 @@
 
     return { update }                  // update again whenever styleset changes
   }
-export default style
+  export default style
