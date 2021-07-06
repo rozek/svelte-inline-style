@@ -12,11 +12,15 @@ npm install svelte-inline-style
 
 ## Usage ##
 
-```
-<script>
-  import style from 'svelte-inline-style'
+It is recommended to import the package within a module context:
 
-  export let styles = {
+```
+<script context="module">
+  import style from 'svelte-inline-style'
+</script>
+
+<script>
+  let styles = {
     fontSize:'22px',   // use camel-cased CSS property names...
     fontWeight:'bold'  // ...and start with a small letter
   }
