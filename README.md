@@ -16,7 +16,7 @@ npm install svelte-inline-style
 
 It is recommended to import the package within a module context:
 
-```
+```html
 <script context="module">
   import style from 'svelte-inline-style'
 </script>
@@ -41,7 +41,7 @@ Sometimes it is necessary to add inline styles to a Svelte component rather than
 
 A straightforward approach could be to use `style` attributes:
 
-```
+```html
 <div style="font-size:{fontsize}px; font-weight:{fontweight}">...</div>
 ```
 
@@ -49,7 +49,7 @@ but this one would first require to construct a string which would then have to 
 
 Another solution has been shown by [mouse484](https://github.com/mouse484) in package [svelte-inline-css](https://github.com/mouse484/svelte-inline-css): with the aid of Svelte "actions" inline styles may be directly set on the HTML elements created to represent Svelte components:
 
-```
+```html
 <script>
   import style from 'svelte-inline-css'
 
@@ -66,7 +66,7 @@ This solution works great, but - again - requires some string processing before 
 
 This implementation therefore suggests a third alternative, which seems "more natural": start with camel-cased CSS property names right away and apply them to HTML elements without prior conversion.
 
-```
+```html
 <script>
   import style from './svelte-inline-style.js'
 
